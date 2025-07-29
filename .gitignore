@@ -1,0 +1,154 @@
+# ===========================================
+# PORTFOLIO BACKEND - SECURITY & CLEANUP  
+# ===========================================
+
+# 🔐 SENSITIVE CONFIGURATION FILES
+# Never commit these to version control
+.env
+.env.local
+.env.production
+.env.staging
+config/secrets.php
+credentials.json
+
+# 🗃️ DATABASE FILES
+# Don't commit database files or backups
+*.sql.backup
+*.db
+*.sqlite
+*.sqlite3
+database_backup_*
+backup-*/
+dumps/
+
+# 📧 EMAIL LOGS & TEMPORARY FILES  
+email_logs/
+temp_emails/
+*.eml
+mail_queue/
+
+# 🔑 AUTHENTICATION & SESSIONS
+sessions/
+tokens/
+otp_cache/
+jwt_keys/
+*.key
+*.pem
+*.crt
+
+# 📝 LOG FILES
+# Don't commit log files
+*.log
+logs/
+error_logs/
+access_logs/
+debug.log
+php_errors.log
+application.log
+
+# 🧪 DEVELOPMENT & TESTING FILES
+test-*.php
+debug-*.php
+*-debug.php
+*-test.php
+test-*.html
+development/
+testing/
+phpunit.xml
+coverage/
+.phpunit.result.cache
+
+# 🛠️ DEVELOPMENT TOOLS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# 📦 DEPENDENCY MANAGEMENT
+# Keep composer.json but ignore lock and vendor for production
+vendor/
+composer.lock
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 🔧 BUILD & CACHE FILES
+cache/
+tmp/
+temp/
+*.cache
+*.tmp
+build/
+dist/
+
+# 📊 UPLOADED FILES & USER DATA
+uploads/
+user_files/
+attachments/
+media/
+images/user_*
+documents/
+
+# 🚀 DEPLOYMENT & BACKUP FILES
+deployment/
+scripts/deploy.sh
+*.sh
+.deployment
+deploy.log
+backup-*/
+
+# 🔄 OLD/BACKUP FILES
+*.bak
+*.backup
+*.old
+*~
+backup_*
+old_*
+*-backup.*
+
+# 📋 DUPLICATE/LEGACY FILES
+*-hostinger.php
+*-hostinger.sql
+DEPLOYMENT.md
+PRODUCTION-README.md
+README-deployment.md
+security-config.md
+database.sql
+
+# 📱 SYSTEM FILES
+.htaccess.backup
+robots.txt.backup
+sitemap.xml.backup
+
+# 🐳 CONTAINER FILES
+Dockerfile.dev
+docker-compose.override.yml
+.dockerignore
+
+# 🔍 ANALYSIS & PROFILING
+profile/
+xdebug/
+*.prof
+blackfire.yml
+
+# 📋 TODO & NOTES
+TODO.md
+NOTES.md
+notes.txt
+todo.txt
+
+# ===========================================
+# ALLOW THESE IMPORTANT FILES
+# ===========================================
+!composer.json
+!database-schema.sql
+!README.md
+!.gitignore
+!*.php
+!*.html
+!*.css
+!*.js
